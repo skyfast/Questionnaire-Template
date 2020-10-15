@@ -34,7 +34,10 @@ body {
 
 /* Meet the Team Section */
 .team {
-  float: left;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: space-evenly;
   column-count: 4;
   margin-left: 1.5rem;
 
@@ -42,12 +45,13 @@ body {
 
 .team__header {
   text-align: center;
-  max-width: 25vw;
-  margin-top: 2rem;
-  margin-left: -1.75rem;
   border-radius: 50%;
-  height: 50vh; 
   background-color: #fff;
+  margin-top: 2rem;
+  height: 50vh; 
+
+ /* max-width: 25vw;*/
+
 }
 
 .team__header-title {
@@ -64,11 +68,12 @@ body {
 .team__details {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  row-gap: 3rem;
 }
 
 .team__detail {
   display: flex;
+  flex-wrap: wrap;
   margin-top: -8rem;
   padding-top: 2rem;
   padding-bottom: 4rem;
@@ -111,12 +116,6 @@ body {
 .team__info {
   margin-left: 1.5rem;
   margin-right: 3.15rem;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* Social Media Section */
